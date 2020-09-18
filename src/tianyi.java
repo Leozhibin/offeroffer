@@ -1,5 +1,6 @@
 import java.util.*;
 public class tianyi {
+    //第k个丑数
     public static void main(String[] args) {
         Scanner sc =  new Scanner(System.in);
         int count = sc.nextInt();
