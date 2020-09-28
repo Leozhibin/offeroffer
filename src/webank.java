@@ -1,5 +1,6 @@
 import java.util.*;
 public class webank {
+    //暴力法 超时
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] line1  = sc.nextLine().split(" ");
@@ -36,9 +37,9 @@ public class webank {
             }
             else if(index==nums.length){
                 System.out.println(nums[nums.length-1]);
-            }else if(nums[index-1]-now==nums[index]-now){
+            }else if(now - nums[index-1]==nums[index]-now){
                 System.out.println(nums[index-1]);
-            }else if(nums[index-1]-now<nums[index]-now){
+            }else if(now - nums[index-1]< nums[index] - now){
                 System.out.println(nums[index-1]);
             }else {
                 System.out.println(nums[index]);
@@ -63,5 +64,29 @@ public class webank {
 21
 9
 18
+
+8 8
+1 5 6 7 14 21 22 32
+1
+4
+5
+9
+10
+14
+17
+19
+
+
+8 8
+1 5 6 7 14 21 22 32
+1
+4
+5
+9
+10
+14
+17
+19
+
 
 * */
