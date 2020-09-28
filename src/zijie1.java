@@ -8,6 +8,8 @@ public class zijie1 {
         int[] next =new int[len+1];
         getNext(next,str);
         System.out.println(str.substring(0,len - next[len]));
+        for(int tmp : next)
+        System.out.println(tmp);
     }
     public static void getNext(int[] next,String str){
         int j=0,k=-1;
